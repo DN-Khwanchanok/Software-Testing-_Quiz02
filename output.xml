@@ -1,59 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.0 on win32)" generated="2026-02-11T11:42:14.324438" rpa="false" schemaversion="5">
-<suite id="s1" name="testRF02" source="C:\Tester_Q\Software-Testing-_Quiz02\testRF02.robot">
+<robot generator="Robot 7.4.1 (Python 3.13.0 on win32)" generated="2026-02-12T00:07:51.570349" rpa="false" schemaversion="5">
+<suite id="s1" name="robotRF02.1" source="C:\Tester_Q\Software-Testing-_Quiz02\robotRF02.1.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2026-02-11T11:42:14.555896" level="INFO">Opening browser 'Chrome' to base url 'https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179'.</msg>
+<msg time="2026-02-12T00:07:51.740369" level="INFO">Opening browser 'Chrome' to base url 'https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179'.</msg>
 <arg>https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-11T11:42:14.555710" elapsed="5.705003"/>
+<status status="PASS" start="2026-02-12T00:07:51.740184" elapsed="4.985760"/>
 </kw>
-<test id="s1-t1" name="view history" line="19">
+<test id="s1-t1" name="view history" line="47">
 <kw name="Login with line">
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-02-11T11:42:20.261933" elapsed="0.833800"/>
+<status status="PASS" start="2026-02-12T00:07:56.726824" elapsed="0.031852"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>กรุณา Login ด้วย LINE ก่อน</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-02-11T11:42:21.095948" elapsed="0.000489"/>
+<status status="PASS" start="2026-02-12T00:07:56.758853" elapsed="0.000558"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-11T11:42:41.097057" level="INFO">Slept 20 seconds.</msg>
+<msg time="2026-02-12T00:08:16.761162" level="INFO">Slept 20 seconds.</msg>
 <arg>20s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-11T11:42:21.096574" elapsed="20.001005"/>
+<status status="PASS" start="2026-02-12T00:07:56.759581" elapsed="20.001970"/>
 </kw>
-<status status="PASS" start="2026-02-11T11:42:20.261599" elapsed="20.836422"/>
+<status status="PASS" start="2026-02-12T00:07:56.726595" elapsed="20.035305"/>
 </kw>
-<kw name="Click for view history">
+<kw name="Click database for view">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${button databasehealth}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-12T00:08:16.763522" elapsed="1.425104"/>
+</kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-11T11:42:41.100247" level="INFO">Clicking element '//*[@id="root"]/div/main/article/section[3]/div/div/div/a'.</msg>
-<msg time="2026-02-11T11:42:41.190886" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-02-11T11:42:41.191070" level="FAIL">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</msg>
-<arg>${click view}</arg>
+<msg time="2026-02-12T00:08:18.189124" level="INFO">Clicking element '//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]'.</msg>
+<arg>${button databasehealth}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2026-02-11T11:42:41.099394" elapsed="0.094649">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+<status status="PASS" start="2026-02-12T00:08:18.188844" elapsed="0.767118"/>
 </kw>
-<status status="FAIL" start="2026-02-11T11:42:41.098730" elapsed="0.095612">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+<status status="PASS" start="2026-02-12T00:08:16.762814" elapsed="2.193321"/>
 </kw>
-<status status="FAIL" start="2026-02-11T11:42:20.260938" elapsed="20.933993">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+<kw name="Click button for see Submit">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Submit Blood Results}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-12T00:08:18.956944" elapsed="0.429666"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-12T00:08:19.387119" level="INFO">Clicking element '//a[contains(@href,'Physical Examination Request')]'.</msg>
+<arg>${Submit Blood Results}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-12T00:08:19.386811" elapsed="7.554317"/>
+</kw>
+<status status="PASS" start="2026-02-12T00:08:18.956619" elapsed="7.984750"/>
+</kw>
+<kw name="Click Health Menu">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Click button bar}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-12T00:08:26.942338" elapsed="0.030801"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-12T00:08:26.973935" level="INFO">Clicking element '//a[@title='ระบบข้อมูลสุขภาพ']'.</msg>
+<arg>${Click button bar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-12T00:08:26.973406" elapsed="0.085210"/>
+</kw>
+<status status="PASS" start="2026-02-12T00:08:26.941768" elapsed="0.117053"/>
+</kw>
+<kw name="Click button save">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Click button save}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-12T00:08:27.059682" elapsed="2.817820"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-12T00:08:29.878342" level="INFO">Clicking element '//*[@id="editorjs"]/div/div[1]/div[14]/div/div/div'.</msg>
+<arg>${Click button save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-12T00:08:29.877875" elapsed="0.075742"/>
+</kw>
+<status status="PASS" start="2026-02-12T00:08:27.059233" elapsed="2.894472"/>
+</kw>
+<kw name="Click Id for view">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Physical Examination Form Result</arg>
+<arg>15s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-02-12T00:08:29.954096" elapsed="0.011284"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Click Id for view row 1}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-12T00:08:29.965521" elapsed="1.649758"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-12T00:08:31.615776" level="INFO">Clicking element '//*[normalize-space()='sk293065gd']'.</msg>
+<arg>${Click Id for view row 1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-12T00:08:31.615498" elapsed="0.066181"/>
+</kw>
+<status status="PASS" start="2026-02-12T00:08:29.953922" elapsed="1.727910"/>
+</kw>
+<kw name="Click button Submit Id">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Click button see ID People's side}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-12T00:08:31.682536" elapsed="0.450781"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-12T00:08:32.133817" level="INFO">Clicking element '//*[@id="page-Physical Examination Form Result"]/div[1]/div/div/div[2]/div[3]/button'.</msg>
+<arg>${Click button see ID People's side}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-12T00:08:32.133530" elapsed="0.121492"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-12T00:08:42.256223" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-12T00:08:32.255323" elapsed="10.001105"/>
+</kw>
+<status status="PASS" start="2026-02-12T00:08:31.682230" elapsed="10.574396"/>
+</kw>
+<status status="PASS" start="2026-02-12T00:07:56.726125" elapsed="45.531092"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-11T11:42:41.196486" elapsed="2.218131"/>
+<status status="PASS" start="2026-02-12T00:08:42.259238" elapsed="2.724446"/>
 </kw>
-<status status="FAIL" start="2026-02-11T11:42:14.325563" elapsed="29.089279"/>
+<status status="PASS" start="2026-02-12T00:07:51.571340" elapsed="53.412539"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="testRF02" id="s1" pass="0" fail="1" skip="0">testRF02</stat>
+<stat name="robotRF02.1" id="s1" pass="1" fail="0" skip="0">robotRF02.1</stat>
 </suite>
 </statistics>
 <errors>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.0 on win32)" generated="2026-02-11T21:50:56.618344" rpa="false" schemaversion="5">
+<suite id="s1" name="Software-Testing- Quiz02" source="c:\Tester_Q\Software-Testing-_Quiz02">
+<suite id="s1-s1" name="robotRF02.1" source="c:\Tester_Q\Software-Testing-_Quiz02\robotRF02.1.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-11T21:50:56.838538" level="INFO">Opening browser 'Chrome' to base url 'https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179'.</msg>
+<arg>https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-11T21:50:56.838163" elapsed="7.782654"/>
+</kw>
+<test id="s1-s1-t1" name="view history" line="40">
+<kw name="Login with line">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-11T21:51:04.625411" elapsed="6.082233"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>กรุณา Login ด้วย LINE ก่อน</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-11T21:51:10.708577" elapsed="0.002358"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-11T21:51:30.713445" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-11T21:51:10.711423" elapsed="20.002457"/>
+</kw>
+<status status="PASS" start="2026-02-11T21:51:04.624919" elapsed="26.089105"/>
+</kw>
+<kw name="Click database for view">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-02-11T21:51:30.716989" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.45)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66ee84325
+	0x7ff66ee84380
+	0x7ff66ec1d49d
+	0x7ff66ebf4012
+	0x7ff66eca8c66
+	0x7ff66ecc5072
+	0x7ff66ec68e38
+	0x7ff66ec69d23
+	0x7ff66f153090
+	0x7ff66f14d918
+	0x7ff66f16dc8a
+	0x7ff66eea06d5
+	0x7ff66eea967c
+	0x7ff66ee8d684
+	0x7ff66ee8d836
+	0x7ff66ee73347
+	0x7ffd3a6426ad
+	0x7ffd3b3aa9f8
+</msg>
+<msg time="2026-02-11T21:51:30.723538" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.45)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66ee84325
+	0x7ff66ee84380
+	0x7ff66ec1d49d
+	0x7ff66ebf4012
+	0x7ff66eca8c66
+	0x7ff66ecc5072
+	0x7ff66ec68e38
+	0x7ff66ec69d23
+	0x7ff66f153090
+	0x7ff66f14d918
+	0x7ff66f16dc8a
+	0x7ff66eea06d5
+	0x7ff66eea967c
+	0x7ff66ee8d684
+	0x7ff66ee8d836
+	0x7ff66ee73347
+	0x7ffd3a6426ad
+	0x7ffd3b3aa9f8
+</msg>
+<arg>${button databasehealth}</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-02-11T21:51:30.714745" elapsed="0.014455">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.45)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66ee84325
+	0x7ff66ee84380
+	0x7ff66ec1d49d
+	0x7ff66ebf4012
+	0x7ff66eca8c66
+	0x7ff66ecc5072
+	0x7ff66ec68e38
+	0x7ff66ec69d23
+	0x7ff66f153090
+	0x7ff66f14d918
+	0x7ff66f16dc8a
+	0x7ff66eea06d5
+	0x7ff66eea967c
+	0x7ff66ee8d684
+	0x7ff66ee8d836
+	0x7ff66ee73347
+	0x7ffd3a6426ad
+	0x7ffd3b3aa9f8
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${button databasehealth}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-11T21:51:30.729427" elapsed="0.000179"/>
+</kw>
+<status status="FAIL" start="2026-02-11T21:51:30.714372" elapsed="0.015381">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.45)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66ee84325
+	0x7ff66ee84380
+	0x7ff66ec1d49d
+	0x7ff66ebf4012
+	0x7ff66eca8c66
+	0x7ff66ecc5072
+	0x7ff66ec68e38
+	0x7ff66ec69d23
+	0x7ff66f153090
+	0x7ff66f14d918
+	0x7ff66f16dc8a
+	0x7ff66eea06d5
+	0x7ff66eea967c
+	0x7ff66ee8d684
+	0x7ff66ee8d836
+	0x7ff66ee73347
+	0x7ffd3a6426ad
+	0x7ffd3b3aa9f8
+</status>
+</kw>
+<kw name="Click buton for see Submit">
+<status status="NOT RUN" start="2026-02-11T21:51:30.730065" elapsed="0.000120"/>
+</kw>
+<kw name="Click button bar">
+<status status="NOT RUN" start="2026-02-11T21:51:30.730428" elapsed="0.000088"/>
+</kw>
+<kw name="Click button save">
+<status status="NOT RUN" start="2026-02-11T21:51:30.730654" elapsed="0.000077"/>
+</kw>
+<kw name="Click Id for view">
+<status status="NOT RUN" start="2026-02-11T21:51:30.730855" elapsed="0.000079"/>
+</kw>
+<status status="FAIL" start="2026-02-11T21:51:04.621042" elapsed="26.110065">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.45)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66ee84325
+	0x7ff66ee84380
+	0x7ff66ec1d49d
+	0x7ff66ebf4012
+	0x7ff66eca8c66
+	0x7ff66ecc5072
+	0x7ff66ec68e38
+	0x7ff66ec69d23
+	0x7ff66f153090
+	0x7ff66f14d918
+	0x7ff66f16dc8a
+	0x7ff66eea06d5
+	0x7ff66eea967c
+	0x7ff66ee8d684
+	0x7ff66ee8d836
+	0x7ff66ee73347
+	0x7ffd3a6426ad
+	0x7ffd3b3aa9f8
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-11T21:51:30.734279" elapsed="2.077887"/>
+</kw>
+<status status="FAIL" start="2026-02-11T21:50:56.666360" elapsed="36.146055"/>
+</suite>
+<suite id="s1-s2" name="testRF02" source="c:\Tester_Q\Software-Testing-_Quiz02\testRF02.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-11T21:51:32.826672" level="INFO">Opening browser 'Chrome' to base url 'https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179'.</msg>
+<arg>https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-11T21:51:32.826096" elapsed="11.914006"/>
+</kw>
+<test id="s1-s2-t1" name="view history" line="19">
+<kw name="Login with line">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-11T21:51:44.752276" elapsed="0.029717"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>กรุณา Login ด้วย LINE ก่อน</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-11T21:51:44.782306" elapsed="0.000847"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-11T21:52:04.784016" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-11T21:51:44.783350" elapsed="20.004066"/>
+</kw>
+<status status="PASS" start="2026-02-11T21:51:44.747623" elapsed="20.042770"/>
+</kw>
+<kw name="Click for view history">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T21:52:04.792044" level="INFO">Clicking element '//*[@id="root"]/div/main/article/section[3]/div/div/div/a'.</msg>
+<msg time="2026-02-11T21:52:04.888482" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-11T21:52:04.888704" level="FAIL">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</msg>
+<arg>${click view}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-11T21:52:04.791643" elapsed="0.131887">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-11T21:52:04.791059" elapsed="0.133341">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-11T21:51:44.740351" elapsed="20.184954">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-11T21:52:04.955617" elapsed="2.276965"/>
+</kw>
+<status status="FAIL" start="2026-02-11T21:51:32.819362" elapsed="34.413932"/>
+</suite>
+<status status="FAIL" start="2026-02-11T21:50:56.622055" elapsed="70.627353"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Software-Testing- Quiz02" id="s1" pass="0" fail="2" skip="0">Software-Testing- Quiz02</stat>
+<stat name="robotRF02.1" id="s1-s1" pass="0" fail="1" skip="0">Software-Testing- Quiz02.robotRF02.1</stat>
+<stat name="testRF02" id="s1-s2" pass="0" fail="1" skip="0">Software-Testing- Quiz02.testRF02</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-11T21:51:30.716989" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=145.0.7632.45)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff66ee84325
+	0x7ff66ee84380
+	0x7ff66ec1d49d
+	0x7ff66ebf4012
+	0x7ff66eca8c66
+	0x7ff66ecc5072
+	0x7ff66ec68e38
+	0x7ff66ec69d23
+	0x7ff66f153090
+	0x7ff66f14d918
+	0x7ff66f16dc8a
+	0x7ff66eea06d5
+	0x7ff66eea967c
+	0x7ff66ee8d684
+	0x7ff66ee8d836
+	0x7ff66ee73347
+	0x7ffd3a6426ad
+	0x7ffd3b3aa9f8
+</msg>
+</errors>
+</robot>
