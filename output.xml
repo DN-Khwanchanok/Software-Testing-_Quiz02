@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.0 on win32)" generated="2026-02-11T11:42:14.324438" rpa="false" schemaversion="5">
+<suite id="s1" name="testRF02" source="C:\Tester_Q\Software-Testing-_Quiz02\testRF02.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-11T11:42:14.555896" level="INFO">Opening browser 'Chrome' to base url 'https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179'.</msg>
+<arg>https://chiangmuan.igovapp.com/health/diagnostic?id=1529902284357-00179</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-11T11:42:14.555710" elapsed="5.705003"/>
+</kw>
+<test id="s1-t1" name="view history" line="19">
+<kw name="Login with line">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-11T11:42:20.261933" elapsed="0.833800"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>กรุณา Login ด้วย LINE ก่อน</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-11T11:42:21.095948" elapsed="0.000489"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-11T11:42:41.097057" level="INFO">Slept 20 seconds.</msg>
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-11T11:42:21.096574" elapsed="20.001005"/>
+</kw>
+<status status="PASS" start="2026-02-11T11:42:20.261599" elapsed="20.836422"/>
+</kw>
+<kw name="Click for view history">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-11T11:42:41.100247" level="INFO">Clicking element '//*[@id="root"]/div/main/article/section[3]/div/div/div/a'.</msg>
+<msg time="2026-02-11T11:42:41.190886" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-11T11:42:41.191070" level="FAIL">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</msg>
+<arg>${click view}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-11T11:42:41.099394" elapsed="0.094649">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-11T11:42:41.098730" elapsed="0.095612">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-11T11:42:20.260938" elapsed="20.933993">Element with locator '//*[@id="root"]/div/main/article/section[3]/div/div/div/a' not found.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-11T11:42:41.196486" elapsed="2.218131"/>
+</kw>
+<status status="FAIL" start="2026-02-11T11:42:14.325563" elapsed="29.089279"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testRF02" id="s1" pass="0" fail="1" skip="0">testRF02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
